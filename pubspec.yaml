@@ -1,0 +1,35 @@
+name: blovedream_printer
+description: >
+  Flutter plugin for Blovedream (BLD) Android terminals with a built-in thermal
+  / label printer. Wraps the OEM android.bld.PrintManager service via reflection.
+version: 0.1.1
+homepage: https://permanentinnovations.africa
+repository: https://github.com/permanentinnovations/blovedream_printer
+issue_tracker: https://github.com/permanentinnovations/blovedream_printer/issues
+
+topics:
+  - thermal-printer
+  - label-printer
+  - blovedream
+  - escpos
+  - android
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: africa.permanentinnovations.bld_thermal_printer
+        pluginClass: BlovedreamPrinterPlugin
